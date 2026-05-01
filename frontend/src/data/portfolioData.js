@@ -10,7 +10,7 @@ export const personalInfo = {
   linkedinUrl: 'https://www.linkedin.com/in/aman-goel2203/',
   linkedinLabel: 'LinkedIn',
   leetcodeUrl: 'https://leetcode.com/u/aman_goel/',
-  portfolioImage: '../public/profile/profile.jpeg',
+  portfolioImage: '/profile/profile.jpeg',
   email: 'aman.goelmg@gmail.com'
 }
 
@@ -91,7 +91,7 @@ export const projects = [
     description:
       'An upscale of the previously built portfolio website with upgraded styling, react framework and more with backend integration to store visitors responses.',
     icon: 'fa-solid fa-user',
-    image: '../public/projects/portfoliov2.png',
+    image: '/projects/portfoliov2.png',
     liveUrl: '#',
   },
     {
@@ -100,7 +100,7 @@ export const projects = [
     description:
       'An AI powered web application aimed just not at detecting deepfake videos but also providing in depth analysis of the video to determine its authenticity, supporting multiple features.',
     icon: 'fa-solid fa-user-secret',
-    image: '../public/projects/deeptrace.png',
+    image: '/projects/deeptrace.png',
     // liveUrl: '#',
   },
   {
@@ -109,7 +109,7 @@ export const projects = [
     description:
       'A full stack complaint management system developed to help an organization log, manage and resolve complaints quickly and efficiently.',
     icon: 'fa-solid fa-screwdriver-wrench',
-    image: '../public/projects/cms.png',
+    image: '/projects/cms.png',
   },
   {
     id: 'p-4',
@@ -117,7 +117,7 @@ export const projects = [
     description:
       'A web-based implementation of the classic Simon Game. Gameplay involves replicating increasingly complex sequences of colors and sounds.',
     icon: 'fa-solid fa-cubes',
-    image: '../public/projects/simon.png',
+    image: '/projects/simon.png',
     codeUrl: 'https://github.com/Amangoel22/Simon-Game',
     liveUrl: 'https://simon-game-iota-seven.vercel.app/',
   },
@@ -127,7 +127,7 @@ export const projects = [
     description:
       'A fun and interactive Memory Card Game built to challenge focus and recall. Flip cards, find matching pairs, and beat your best score.',
     icon: 'fa-solid fa-brain',
-    image: '../public/projects/memory_card.png',
+    image: '/projects/memory_card.png',
     codeUrl: 'https://github.com/Amangoel22/Memory-Card-Game',
     liveUrl: 'https://pair-card-game.vercel.app/',
   },
@@ -137,7 +137,7 @@ export const projects = [
     description:
       'A live API powered crypto price tracker which provides a detailed analysis of each crypto currency.',
     icon: 'fa-solid fa-arrow-trend-up',
-    image: '../public/projects/crypto.png',
+    image: '/projects/crypto.png',
     codeUrl: 'https://github.com/Amangoel22/Live-Crypto-Price-Tracker',
     liveUrl: 'https://crypto-price-tracker-live.vercel.app/',
   },
@@ -158,7 +158,7 @@ export const certificates = [
     date: 'Aug 2025',
     description:
       'Completed 8 weeks of internship at CFEES, DRDO.',
-    image: '../public/certificates/drdo.jpeg',
+    image: '/certificates/drdo.jpeg',
   },
   {
     id: 'c-2',
@@ -167,7 +167,7 @@ export const certificates = [
     date: 'July 2024',
     description:
       'Completed python bootcamp from udemy, diving deep into the language.',
-    image: '../public/certificates/python.jpeg',
+    image: '/certificates/python.jpeg',
   },
   {
     id: 'c-3',
@@ -176,7 +176,7 @@ export const certificates = [
     date: 'May 2026',
     description:
       'Understood web development concepts in PERN stack.',
-    image: '../public/certificates/web.jpg',
+    image: '/certificates/web.jpg',
   },
 ]
 
