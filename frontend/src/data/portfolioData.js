@@ -92,7 +92,7 @@ export const projects = [
       'An upscale of the previously built portfolio website with upgraded styling, react framework and more with backend integration to store visitors responses.',
     icon: 'fa-solid fa-user',
     image: '/projects/portfoliov2.png',
-    liveUrl: '#',
+    liveUrl: 'https://aman-portfolio-website-10.netlify.app/',
   },
     {
     id: 'p-2',
