@@ -22,7 +22,6 @@ export default function BackToTop() {
           : 'opacity-0 scale-50 translate-y-4 pointer-events-none'
       }`}
     >
-      {/* Pulse ring */}
       <span className="absolute inset-0 rounded-full bg-blue-500/40 opacity-0 group-hover:opacity-100 animate-pulse-ring" />
       <ArrowUp className="w-6 h-6 relative transition-transform duration-300 group-hover:-translate-y-1" />
     </button>

@@ -9,11 +9,9 @@ export default function About() {
       id="about"
       className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900/50 relative overflow-hidden"
     >
-      {/* Soft ambient blob */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-300/10 dark:bg-blue-700/10 rounded-full blur-3xl animate-float-slower pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative">
-        {/* Heading */}
         <div className="text-center mb-16 animate-on-scroll fade-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             About Me
@@ -22,10 +20,8 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Avatar */}
           <div className="lg:col-span-5 animate-on-scroll fade-left delay-100 mt-2 lg:mt-6">
             <div className="relative group [perspective:1000px]">
-              {/* Glow ring */}
               <div className="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-blue-500 via-indigo-500 to-cyan-400 opacity-50 blur-xl group-hover:opacity-80 transition-opacity duration-700 animate-gradient-sweep" />
               <div className="relative aspect-square rounded-2xl bg-gradient-to-tr from-blue-100 to-blue-50 dark:from-gray-800 dark:to-gray-700 p-6 flex items-center justify-center shadow-inner overflow-hidden transition-transform duration-500 group-hover:scale-[1.03]]">
                 <img
@@ -33,14 +29,12 @@ export default function About() {
                   alt="Avatar"
                   className="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-110"
                 />
-                {/* Sheen */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600/10 dark:bg-blue-400/10 rounded-full blur-xl animate-float-y" />
             </div>
           </div>
 
-          {/* Text */}
           <div className="lg:col-span-7 space-y-6 animate-on-scroll fade-right delay-200 flex flex-col justify-center">
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
               Passionate Developer &amp; Tech Enthusiast

@@ -9,7 +9,6 @@ export default function TimelineItem({
 }) {
   return (
     <div className={`relative pl-8 md:pl-10 animate-on-scroll fade-left ${delay}`}>
-      {/* Dot with ripple */}
       <div className="absolute -left-[11px] top-2 w-5 h-5 rounded-full bg-blue-600 border-4 border-gray-50 dark:border-gray-900 animate-ring-ripple" />
 
       <div className="group bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 hover:border-blue-300 dark:hover:border-blue-700">

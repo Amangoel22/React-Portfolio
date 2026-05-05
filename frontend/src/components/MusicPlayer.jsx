@@ -139,7 +139,6 @@ export default function MusicPlayer() {
         }`}
       >
         <div className="w-72 sm:w-80 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-2xl shadow-blue-500/10 p-4">
-            {/* Header */}
             <div className="flex items-center gap-3">
               <div
                 className={`relative w-11 h-11 shrink-0 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center shadow-md ${
@@ -170,7 +169,6 @@ export default function MusicPlayer() {
               </button>
             </div>
 
-            {/* Progress */}
             <div className="mt-4">
               <input
                 type="range"
@@ -189,7 +187,6 @@ export default function MusicPlayer() {
               </div>
             </div>
 
-            {/* Controls */}
             <div className="mt-2 flex items-center justify-center gap-2">
               <button
                 type="button"
@@ -220,7 +217,6 @@ export default function MusicPlayer() {
               </button>
             </div>
 
-            {/* Volume + track index */}
             <div className="mt-3 flex items-center gap-3">
               <i className="fa-solid fa-volume-low text-gray-400 text-xs" aria-hidden="true" />
               <input
@@ -247,7 +243,6 @@ export default function MusicPlayer() {
         </div>
       </div>
 
-      {/* Nudge bubble — pops out to the right of the music button */}
       <div
         role="status"
         aria-live="polite"
@@ -258,7 +253,6 @@ export default function MusicPlayer() {
         }`}
       >
         <div className="relative flex items-center gap-2 pl-3 pr-2 py-2 rounded-full border border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-xl shadow-blue-500/10 animate-bounce-x">
-          {/* Tail pointing toward the music button */}
           <span
             className="absolute -left-1.5 top-1/2 -translate-y-1/2 w-3 h-3 rotate-45 bg-white/95 dark:bg-gray-900/95 border-l border-b border-gray-200 dark:border-gray-800"
             aria-hidden="true"
@@ -284,7 +278,6 @@ export default function MusicPlayer() {
         </div>
       </div>
 
-      {/* Toggle button (always visible) — independent fixed element */}
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
@@ -295,7 +288,6 @@ export default function MusicPlayer() {
         {playing && (
           <span className="absolute inset-0 rounded-full ring-2 ring-blue-400/60 animate-ring-ripple" aria-hidden="true" />
         )}
-        {/* Subtle attention dot when the nudge is showing */}
         {nudge && !open && !playing && (
           <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3" aria-hidden="true">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />

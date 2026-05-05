@@ -9,18 +9,15 @@ export default function Hero() {
       id="home"
       className="min-h-[100svh] flex items-center justify-center pt-20 sm:pt-24 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
     >
-      {/* Background blobs */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-[28rem] h-[28rem] bg-blue-400/20 dark:bg-blue-600/10 rounded-full blur-3xl animate-float-slow" />
         <div className="absolute bottom-1/4 right-1/4 w-[28rem] h-[28rem] bg-indigo-400/20 dark:bg-indigo-600/10 rounded-full blur-3xl animate-float-slower" />
         <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-cyan-300/10 dark:bg-cyan-500/10 rounded-full blur-3xl animate-float-y" />
       </div>
 
-      {/* Grid overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.04)_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_75%)] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto text-center z-10">
-        {/* Eyebrow pill */}
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-200/60 dark:border-blue-800/60 animate-on-scroll fade-down animate-glow-pulse">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75" />
@@ -67,7 +64,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Scroll indicator */}
         <a
           href="#about"
           aria-label="Scroll to next section"

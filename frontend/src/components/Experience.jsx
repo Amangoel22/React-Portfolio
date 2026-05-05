@@ -19,7 +19,6 @@ function TimelineSection({ icon: Icon, title, items, getProps }) {
       </div>
 
       <div className="relative ml-3 md:ml-4 space-y-12">
-        {/* Animated drawing line */}
         <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-300 via-blue-500 to-transparent dark:from-blue-700 dark:via-blue-500 animate-draw-line" />
         {items.map((item, i) => (
           <TimelineItem
@@ -42,7 +41,6 @@ export default function Experience() {
       <div className="absolute top-1/3 right-0 w-96 h-96 bg-indigo-300/10 dark:bg-indigo-700/10 rounded-full blur-3xl animate-float-slow pointer-events-none" />
 
       <div className="max-w-4xl mx-auto relative">
-        {/* Heading */}
         <div className="text-center mb-16 animate-on-scroll fade-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Experience &amp; Education

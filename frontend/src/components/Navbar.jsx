@@ -44,7 +44,6 @@ export default function Navbar({ isDark, toggleTheme }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <a
             href="#home"
             className="group text-2xl font-bold tracking-tighter text-gray-900 dark:text-white inline-flex items-baseline transition-transform duration-300 hover:scale-105"
@@ -56,7 +55,6 @@ export default function Navbar({ isDark, toggleTheme }) {
             <span className="text-blue-600 dark:text-blue-400 inline-block animate-pulse-dot">.</span>
           </a>
 
-          {/* Desktop nav */}
           <div className="hidden md:flex items-center space-x-8">
             {NAV_LINKS.map(({ href, label }, i) => (
               <a
@@ -83,7 +81,6 @@ export default function Navbar({ isDark, toggleTheme }) {
             </button>
           </div>
 
-          {/* Mobile controls */}
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={toggleTheme}
@@ -108,7 +105,6 @@ export default function Navbar({ isDark, toggleTheme }) {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-500 ${
           mobileOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'

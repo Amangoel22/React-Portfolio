@@ -22,7 +22,6 @@ export default function Skills() {
       className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
     >
       <div className="max-w-6xl mx-auto relative">
-        {/* Heading */}
         <div className="text-center mb-16 animate-on-scroll fade-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Skills &amp; Expertise

@@ -20,7 +20,6 @@ export default function Achievements() {
       <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] bg-blue-200/10 dark:bg-blue-800/10 rounded-full blur-3xl animate-float-slow pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative">
-        {/* Heading */}
         <div className="text-center mb-16 animate-on-scroll fade-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Achievements
@@ -34,7 +33,6 @@ export default function Achievements() {
               key={i}
               className={`group relative bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 flex items-start space-x-4 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/15 hover:border-blue-300/60 dark:hover:border-blue-700/60 animate-on-scroll scale-in ${DELAYS[i % DELAYS.length]}`}
             >
-              {/* Sheen */}
               <span className="pointer-events-none absolute inset-0 rounded-2xl overflow-hidden">
                 <span className="absolute inset-y-0 -left-1/2 w-1/2 bg-gradient-to-r from-transparent via-white/30 to-transparent dark:via-white/10 -skew-x-12 translate-x-0 group-hover:translate-x-[260%] transition-transform duration-1000 ease-out" />
               </span>
