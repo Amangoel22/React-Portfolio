@@ -15,11 +15,11 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import MusicPlayer from './components/MusicPlayer'
 import BackToTop from './components/BackToTop'
+import MinorProjects from './components/MinorProjects'
 
 export default function App() {
   const { isDark, toggleTheme } = useTheme()
 
-  // Always start at the top on initial load
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual'
@@ -27,7 +27,6 @@ export default function App() {
     window.scrollTo(0, 0)
   }, [])
 
-  // Scroll-reveal observer (reads .animate-on-scroll classes)
   useScrollReveal()
 
   return (
@@ -40,12 +39,12 @@ export default function App() {
         <About />
         <Experience />
         <Projects />
+        <MinorProjects />
         <Skills />
         <Achievements />
         <Certificates />
         <Contact />
       </main>
-
       <Footer />
       <MusicPlayer />
       <BackToTop />

@@ -1,19 +1,16 @@
 import ProjectCard from './ProjectCard'
-import { projects } from '../data/portfolioData'
+import { minorProjects } from '../data/portfolioData'
 
 const DELAYS = [
   'delay-100',
   'delay-200',
   'delay-300',
-  'delay-100',
-  'delay-200',
-  'delay-300',
 ]
 
-export default function Projects() {
+export default function MinorProjects() {
   return (
     <section
-      id="projects"
+      id="minor-projects"
       className="py-14 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
     >
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-300/10 dark:bg-blue-700/10 rounded-full blur-3xl animate-float-slower pointer-events-none" />
@@ -22,13 +19,13 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto relative">
         <div className="text-center mb-16 animate-on-scroll fade-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Featured Projects
+            Minor Projects
           </h2>
           <div className="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full animate-shimmer" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, i) => (
+          {minorProjects.map((project, i) => (
             <ProjectCard
               key={project.id}
               {...project}

@@ -2,8 +2,8 @@ export const personalInfo = {
   name: 'Aman Goel',
   initials: 'AG',
   title: 'Full-Stack Developer & Tech Enthusiast',
-  tagline:
-    'I craft fast, accessible, and delightfully animated web experiences — turning ideas into pixel-perfect products.',
+  tagline: `I craft fast, accessible, and delightfully animated web experiences
+- turning ideas into pixel-perfect products.`,
   location: 'Delhi, India',
   github: 'Github',
   githuburl: 'https://github.com/Amangoel22',
@@ -94,7 +94,7 @@ export const projects = [
     image: '/projects/portfoliov2.png',
     liveUrl: 'https://aman-portfolio-website-10.netlify.app/',
   },
-    {
+  {
     id: 'p-2',
     title: 'DeepTrace',
     description:
@@ -111,31 +111,38 @@ export const projects = [
     icon: 'fa-solid fa-screwdriver-wrench',
     image: '/projects/cms.png',
   },
+]
+
+export const minorProjects = [
   {
-    id: 'p-4',
+    id: 'mp-1',
+    title: 'Air Pollution Tracker',
+    icon: 'fa-solid fa-smog',
+    description: 'IoT based air pollution monitor. Powered by Arduino.',
+    image: '/projects/iot.png',
+  },
+  {
+    id: 'mp-2',
+    title: 'Memory Card Game',
+    description: 'A fun and interactive Memory Card Game built to challenge focus and recall. Flip cards, find matching pairs, and beat your best score.',
+    icon: 'fa-solid fa-brain',
+    image: '/projects/memory_card.png',
+    liveUrl: 'https://pair-card-game.vercel.app/',
+    codeUrl: 'https://github.com/Amangoel22/Memory-Card-Game',
+  },
+  {
+    id: 'mp-3',
     title: 'Simon Game',
-    description:
-      'A web-based implementation of the classic Simon Game. Gameplay involves replicating increasingly complex sequences of colors and sounds.',
+    description: 'A web-based implementation of the classic Simon Game. Gameplay involves replicating increasingly complex sequences of colors and sounds.',
     icon: 'fa-solid fa-cubes',
     image: '/projects/simon.png',
     codeUrl: 'https://github.com/Amangoel22/Simon-Game',
     liveUrl: 'https://simon-game-iota-seven.vercel.app/',
   },
   {
-    id: 'p-5',
-    title: 'Memory Card Game',
-    description:
-      'A fun and interactive Memory Card Game built to challenge focus and recall. Flip cards, find matching pairs, and beat your best score.',
-    icon: 'fa-solid fa-brain',
-    image: '/projects/memory_card.png',
-    codeUrl: 'https://github.com/Amangoel22/Memory-Card-Game',
-    liveUrl: 'https://pair-card-game.vercel.app/',
-  },
-  {
-    id: 'p-6',
+    id: 'mp-4',
     title: 'Crypto Price Tracker',
-    description:
-      'A live API powered crypto price tracker which provides a detailed analysis of each crypto currency.',
+    description: 'A live API powered crypto price tracker which provides a detailed analysis of each crypto currency.',
     icon: 'fa-solid fa-arrow-trend-up',
     image: '/projects/crypto.png',
     codeUrl: 'https://github.com/Amangoel22/Live-Crypto-Price-Tracker',
@@ -144,10 +151,10 @@ export const projects = [
 ]
 
 export const skills = {
-  Frontend: ['HTML','CSS','JavaScript','Bootstrap','React','Tailwind CSS'],
-  Backend: ['Node.js', 'Express.js', 'PostgreSQL','MySQL','Php','EJS'],
-  'Tools & DevOps': ['Git', 'Github', 'Vercel', 'Render', 'Netlify', 'PhpMyAdmin', 'WAMP', 'XAMPP'],
-  'Languages': ['JavaScript', 'Python', 'C', 'C++', 'Java','Php'],
+  Frontend: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React', 'Tailwind CSS'],
+  Backend: ['Node.js', 'Express.js', 'PostgreSQL', 'MySQL', 'Php', 'EJS'],
+  'Tools': ['Git', 'Github', 'Vercel', 'Render', 'Netlify', 'PhpMyAdmin', 'WAMP', 'XAMPP'],
+  'Languages': ['JavaScript', 'Python', 'C', 'C++', 'Java', 'Php'],
 }
 
 export const certificates = [
@@ -181,9 +188,9 @@ export const certificates = [
 ]
 
 export const achievements = [
-  'Top 22% at Leetcode Contents (As of May 2026)',
+  'Top 19% at Leetcode Contents (As of May 2026)',
   'Smart India Hackathon - Internal Hackathon Winner',
-  'House Prefect - Captain (Goodley Public School)',
+  'House Prefect - Captain',
   '7 Days DSA Challenge - CodeGeeks',
   'Literary Competition Winner - Story Telling',
   'Academic Rank Holder',

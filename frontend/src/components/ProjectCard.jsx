@@ -15,7 +15,6 @@ export default function ProjectCard({
 }) {
   const cardRef = useRef(null)
 
-  // 3D mouse tilt — disabled on touch / coarse-pointer devices
   const isFinePointer =
     typeof window !== 'undefined' &&
     window.matchMedia &&
@@ -49,10 +48,8 @@ export default function ProjectCard({
       }}
       className={`group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 transition-[transform,box-shadow,border-color] duration-500 hover:shadow-2xl hover:shadow-blue-500/15 hover:border-blue-300/70 dark:hover:border-blue-700/70 flex flex-col animate-on-scroll fade-up ${delay}`}
     >
-      {/* Animated glow */}
       <div className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-tr from-blue-500/0 via-blue-500/10 to-indigo-500/20 blur-xl" />
 
-      {/* Image / Icon area */}
       {image ? (
         <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
           <img
@@ -61,7 +58,7 @@ export default function ProjectCard({
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          {/* Live link floating */}
+
           {liveUrl && (
             <a
               href={liveUrl}
@@ -76,7 +73,6 @@ export default function ProjectCard({
       ) : null}
 
       <div className="p-8 flex-1 flex flex-col">
-        {/* Header row */}
         <div className="flex justify-between items-start mb-6">
           {!image && icon && (
             <div className="relative w-12 h-12 bg-blue-50 dark:bg-blue-900/20 rounded-xl flex items-center justify-center text-blue-600 dark:text-blue-400 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110">
@@ -117,12 +113,10 @@ export default function ProjectCard({
           </div>
         </div>
 
-        {/* Title */}
         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {title}
         </h3>
 
-        {/* Description */}
         <p className="text-gray-600 dark:text-gray-300 mb-6 flex-1 leading-relaxed">
           {description}
         </p>
