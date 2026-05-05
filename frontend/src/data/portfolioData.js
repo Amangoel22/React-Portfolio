@@ -199,13 +199,18 @@ export const achievements = [
 
 export const tracks = [
   {
-    title: "Sample Track",
-    artist: "Aman Playlist",
-    src: "/music/song1.mp3"
+    title: "Como Vamos",
+    artist: "Casa Rosa",
+    src: "/music/Como Vamos.mp3"
   },
   {
-    title: "Another Track",
-    artist: "Chill Vibes",
-    src: "/music/song2.mp3"
+    title: "Fields of fariness",
+    artist: "Patrick Jordan",
+    src: "/music/Fields of fariness.mp3"
+  },
+    {
+    title: "Icelandic Arpeggios",
+    artist: "Div Kid",
+    src: "/music/Icelandic Arpeggios.mp3"
   }
 ]
