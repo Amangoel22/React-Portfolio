@@ -1,62 +1,49 @@
 const express = require("express");
-const mysql = require("mysql2");
+const { Pool } = require("pg");
 const cors = require("cors");
-const path = require("path");
 require("dotenv").config();
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "../frontend")));
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false },
+});
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/index.html"));
+  res.send("Backend is running.");
 });
 
-const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  port: process.env.DB_PORT
-});
-
-db.connect((err) => {
-  if (err) {
-    console.log("DB Connection Failed:", err);
-    return;
-  }
-  console.log("MySQL Connected");
-});
-
-app.post("/contact", (req, res) => {
+app.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
     return res.status(400).json({
       success: false,
-      message: "All fields are required"
+      message: "All fields are required",
     });
   }
 
-  const sql =
-    "INSERT INTO messages (name, email, message) VALUES (?, ?, ?)";
-
-  db.query(sql, [name, email, message], (err) => {
-    if (err) {
-      console.log(err);
-      return res.status(500).json({
-        success: false,
-        message: "Database error"
-      });
-    }
+  try {
+    await pool.query(
+      "INSERT INTO messages (name, email, message) VALUES ($1, $2, $3)",
+      [name, email, message]
+    );
 
     res.json({
       success: true,
-      message: "Message sent successfully"
+      message: "Message sent successfully",
     });
-  });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({
+      success: false,
+      message: "Database error",
+    });
+  }
 });
 
 const PORT = process.env.PORT || 5000;
