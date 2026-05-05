@@ -28,7 +28,7 @@ const handleSubmit = async (e) => {
     setError('')
     setStatus('sending')
 
-    const res = await fetch('http://localhost:5000/contact', {
+    const res = await fetch('https://react-portfolio-backend-nge7.onrender.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
