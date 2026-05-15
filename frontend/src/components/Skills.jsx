@@ -1,14 +1,21 @@
 import { useState } from 'react'
 import { skills } from '../data/portfolioData'
 
-function SkillChip({ label, index }) {
+function SkillItem({ label, index }) {
   return (
-    <span
+    <div
       style={{ animationDelay: `${index * 50}ms` }}
-      className="animate-chip-pop relative px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg text-sm font-medium border border-blue-100 dark:border-blue-800/50 transition-all duration-300 cursor-default hover:scale-105 hover:-translate-y-0.5 hover:bg-blue-100 dark:hover:bg-blue-900/40 hover:shadow-md hover:shadow-blue-500/20"
+      className="animate-chip-pop flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700/50 hover:border-blue-400 dark:hover:border-blue-600/50 transition-all duration-300 hover:shadow-md hover:shadow-blue-500/10 hover:bg-blue-50/50 dark:hover:bg-blue-900/10"
     >
-      {label}
-    </span>
+      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 flex items-center justify-center flex-shrink-0">
+        <span className="text-lg font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+          {label.charAt(0)}
+        </span>
+      </div>
+      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+        {label}
+      </span>
+    </div>
   )
 }
 
@@ -21,12 +28,10 @@ export default function Skills() {
   const getSkillsForTab = (tabName) => {
     const tabSkills = skills[tabName]
     
-    // For Web Dev tab, combine Frontend and Backend
     if (tabName === 'Web Dev' && typeof tabSkills === 'object' && !Array.isArray(tabSkills)) {
       return [...tabSkills.Frontend, ...tabSkills.Backend]
     }
     
-    // For other tabs, return as is
     return Array.isArray(tabSkills) ? tabSkills : []
   }
 
@@ -43,32 +48,39 @@ export default function Skills() {
           <div className="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full animate-shimmer" />
         </div>
 
-        {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12 animate-on-scroll fade-up">
+        <div className="flex flex-wrap justify-center gap-6 mb-16 animate-on-scroll fade-up">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                activeTab === tab
-                  ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/30'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600'
+              className={`relative group transition-all duration-300 ${
+                activeTab === tab ? 'scale-100' : 'scale-90 hover:scale-95'
               }`}
             >
-              {tab}
+              <div
+                className={`w-20 h-20 rounded-full flex items-center justify-center font-semibold text-sm text-center px-2 transition-all duration-300 ${
+                  activeTab === tab
+                    ? 'bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/40'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600'
+                }`}
+              >
+                {tab}
+              </div>
+              {activeTab === tab && (
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/20 to-indigo-600/20 blur-xl -z-10" />
+              )}
             </button>
           ))}
         </div>
 
-        {/* Skills Display */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700 animate-on-scroll fade-up">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6 inline-flex items-center gap-3">
-            <span className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse-dot" />
+        <div className="animate-on-scroll fade-up">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 inline-flex items-center gap-3">
+            <span className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600" />
             {activeTab}
           </h3>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {getSkillsForTab(activeTab).map((skill, idx) => (
-              <SkillChip key={skill} label={skill} index={idx} />
+              <SkillItem key={skill} label={skill} index={idx} />
             ))}
           </div>
         </div>

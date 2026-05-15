@@ -49,19 +49,20 @@ export default function Certificates() {
 
       {fullscreenImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-md p-4"
           onClick={() => setFullscreenImage(null)}
         >
           <button
             onClick={() => setFullscreenImage(null)}
-            className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
+            className="absolute top-6 right-6 p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors duration-200 z-[10000]"
+            aria-label="Close fullscreen image"
           >
             <X className="w-6 h-6 text-white" />
           </button>
           <img
             src={fullscreenImage}
             alt="Certificate fullscreen"
-            className="max-w-4xl max-h-[90vh] object-contain rounded-lg shadow-2xl"
+            className="max-w-4xl max-h-[90vh] w-full object-contain rounded-lg shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
         </div>
