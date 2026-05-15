@@ -1,7 +1,7 @@
 'use client'
 
-import { useRef } from 'react'
-import { ExternalLink, BadgeCheck, Calendar } from 'lucide-react'
+import { useRef, useState } from 'react'
+import { ExternalLink, BadgeCheck, Calendar, X } from 'lucide-react'
 import { certificates } from '../data/portfolioData'
 
 const DELAYS = [
@@ -14,6 +14,8 @@ const DELAYS = [
 ]
 
 export default function Certificates() {
+  const [fullscreenImage, setFullscreenImage] = useState(null)
+
   return (
     <section
       id="certificates"
@@ -39,15 +41,36 @@ export default function Certificates() {
               key={cert.id}
               cert={cert}
               delay={DELAYS[i % DELAYS.length]}
+              onImageClick={setFullscreenImage}
             />
           ))}
         </div>
       </div>
+
+      {fullscreenImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          onClick={() => setFullscreenImage(null)}
+        >
+          <button
+            onClick={() => setFullscreenImage(null)}
+            className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200"
+          >
+            <X className="w-6 h-6 text-white" />
+          </button>
+          <img
+            src={fullscreenImage}
+            alt="Certificate fullscreen"
+            className="max-w-4xl max-h-[90vh] object-contain rounded-lg shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   )
 }
 
-function CertificateCard({ cert, delay }) {
+function CertificateCard({ cert, delay, onImageClick }) {
   const cardRef = useRef(null)
 
   const isFinePointer =
@@ -85,11 +108,12 @@ function CertificateCard({ cert, delay }) {
     >
       <div className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-tr from-blue-500/0 via-blue-500/10 to-indigo-500/20 blur-xl" />
 
-      <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
+      <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 cursor-pointer">
         <img
           src={cert.image || '/placeholder.svg'}
           alt={`${cert.title} certificate`}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          onClick={() => onImageClick(cert.image)}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 

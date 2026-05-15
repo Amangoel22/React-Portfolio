@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { skills } from '../data/portfolioData'
 
 function SkillChip({ label, index }) {
@@ -14,7 +15,20 @@ function SkillChip({ label, index }) {
 const DELAYS = ['delay-100', 'delay-200', 'delay-300', 'delay-400']
 
 export default function Skills() {
-  const categories = Object.entries(skills)
+  const [activeTab, setActiveTab] = useState('Web Dev')
+  const tabs = Object.keys(skills)
+
+  const getSkillsForTab = (tabName) => {
+    const tabSkills = skills[tabName]
+    
+    // For Web Dev tab, combine Frontend and Backend
+    if (tabName === 'Web Dev' && typeof tabSkills === 'object' && !Array.isArray(tabSkills)) {
+      return [...tabSkills.Frontend, ...tabSkills.Backend]
+    }
+    
+    // For other tabs, return as is
+    return Array.isArray(tabSkills) ? tabSkills : []
+  }
 
   return (
     <section
@@ -29,23 +43,34 @@ export default function Skills() {
           <div className="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full animate-shimmer" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {categories.map(([category, items], i) => (
-            <div
-              key={category}
-              className={`group bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-300/60 dark:hover:border-blue-700/60 animate-on-scroll fade-up ${DELAYS[i % DELAYS.length]}`}
+        {/* Tabs */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12 animate-on-scroll fade-up">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                activeTab === tab
+                  ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/30'
+                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600'
+              }`}
             >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6 inline-flex items-center gap-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse-dot" />
-                {category}
-              </h3>
-              <div className="flex flex-wrap gap-3">
-                {items.map((skill, idx) => (
-                  <SkillChip key={skill} label={skill} index={idx} />
-                ))}
-              </div>
-            </div>
+              {tab}
+            </button>
           ))}
+        </div>
+
+        {/* Skills Display */}
+        <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700 animate-on-scroll fade-up">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6 inline-flex items-center gap-3">
+            <span className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse-dot" />
+            {activeTab}
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {getSkillsForTab(activeTab).map((skill, idx) => (
+              <SkillChip key={skill} label={skill} index={idx} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

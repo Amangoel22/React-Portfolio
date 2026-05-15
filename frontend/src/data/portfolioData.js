@@ -151,10 +151,13 @@ export const minorProjects = [
 ]
 
 export const skills = {
-  Frontend: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React.js', 'Tailwind CSS'],
-  Backend: ['Node.js', 'Express.js', 'MySQL', 'PostgreSQL', 'MongoDB', 'Php', 'EJS'],
-  Tools: ['Git', 'Github', 'Vercel', 'Render', 'Netlify', 'PhpMyAdmin', 'WAMP', 'XAMPP'],
+  'Web Dev': {
+    Frontend: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React.js', 'Tailwind CSS'],
+    Backend: ['Node.js', 'Express.js', 'MySQL', 'PostgreSQL', 'MongoDB', 'Php', 'EJS'],
+  },
   Languages: ['JavaScript', 'Python', 'C', 'C++', 'Java', 'Php'],
+  'Soft Skills': ['Communication', 'Problem Solving', 'Team Collaboration', 'Leadership', 'Adaptability', 'Time Management'],
+  Other: ['Git', 'Github', 'Vercel', 'Render', 'Netlify', 'PhpMyAdmin', 'WAMP', 'XAMPP'],
 }
 
 export const certificates = [
