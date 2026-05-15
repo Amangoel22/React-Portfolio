@@ -28,12 +28,10 @@ export default function Skills() {
   const getSkillsForTab = (tabName) => {
     const tabSkills = skills[tabName]
     
-    // For Web Dev tab, combine Frontend and Backend
     if (tabName === 'Web Dev' && typeof tabSkills === 'object' && !Array.isArray(tabSkills)) {
       return [...tabSkills.Frontend, ...tabSkills.Backend]
     }
     
-    // For other tabs, return as is
     return Array.isArray(tabSkills) ? tabSkills : []
   }
 
@@ -67,12 +65,7 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Skills Display */}
         <div className="animate-on-scroll fade-up">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 inline-flex items-center gap-3">
-            <span className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600" />
-            {activeTab}
-          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {getSkillsForTab(activeTab).map((skill, idx) => (
               <SkillItem key={skill} label={skill} index={idx} />
