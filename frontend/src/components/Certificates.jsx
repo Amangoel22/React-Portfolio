@@ -109,14 +109,16 @@ function CertificateCard({ cert, delay, onImageClick }) {
     >
       <div className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-tr from-blue-500/0 via-blue-500/10 to-indigo-500/20 blur-xl" />
 
-      <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 cursor-pointer">
+      <div 
+        className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 cursor-pointer"
+        onClick={() => onImageClick(cert.image)}
+      >
         <img
           src={cert.image || '/placeholder.svg'}
           alt={`${cert.title} certificate`}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          onClick={() => onImageClick(cert.image)}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
         {cert.credentialUrl && (
           <a

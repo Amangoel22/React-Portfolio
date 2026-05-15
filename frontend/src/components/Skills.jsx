@@ -28,10 +28,12 @@ export default function Skills() {
   const getSkillsForTab = (tabName) => {
     const tabSkills = skills[tabName]
     
+    // For Web Dev tab, combine Frontend and Backend
     if (tabName === 'Web Dev' && typeof tabSkills === 'object' && !Array.isArray(tabSkills)) {
       return [...tabSkills.Frontend, ...tabSkills.Backend]
     }
     
+    // For other tabs, return as is
     return Array.isArray(tabSkills) ? tabSkills : []
   }
 
@@ -48,31 +50,24 @@ export default function Skills() {
           <div className="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full animate-shimmer" />
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 mb-16 animate-on-scroll fade-up">
+        {/* Tabs */}
+        <div className="flex flex-wrap justify-center gap-4 mb-16 animate-on-scroll fade-up">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`relative group transition-all duration-300 ${
-                activeTab === tab ? 'scale-100' : 'scale-90 hover:scale-95'
+              className={`px-8 py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${
+                activeTab === tab
+                  ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/30'
+                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600'
               }`}
             >
-              <div
-                className={`w-20 h-20 rounded-full flex items-center justify-center font-semibold text-sm text-center px-2 transition-all duration-300 ${
-                  activeTab === tab
-                    ? 'bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/40'
-                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600'
-                }`}
-              >
-                {tab}
-              </div>
-              {activeTab === tab && (
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/20 to-indigo-600/20 blur-xl -z-10" />
-              )}
+              {tab}
             </button>
           ))}
         </div>
 
+        {/* Skills Display */}
         <div className="animate-on-scroll fade-up">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 inline-flex items-center gap-3">
             <span className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600" />
