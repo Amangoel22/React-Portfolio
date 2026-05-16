@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: 'Aman Goel',
   initials: 'AG',
-  title: 'Full-Stack Developer & Tech Enthusiast',
+  title: 'Full-Stack Developer & AI Enthusiast',
   tagline: `I craft fast, accessible, and delightfully animated web experiences
-- turning ideas into pixel-perfect products.`,
+ turning ideas into pixel-perfect products.`,
   location: 'Delhi, India',
   github: 'Github',
   githuburl: 'https://github.com/Amangoel22',
@@ -150,14 +150,106 @@ export const minorProjects = [
   },
 ]
 
+import {
+  faReact,
+  faJs,
+  faNodeJs,
+  faHtml5,
+  faCss3Alt,
+  faBootstrap,
+  faPython,
+  faJava,
+  faGitAlt,
+  faGithub,
+  faTailwindCss,
+} from '@fortawesome/free-brands-svg-icons'
+
+import {
+  faPeopleGroup,
+  faLightbulb,
+  faClock,
+  faComments,
+  faChessKing,
+  faCompass,
+} from '@fortawesome/free-solid-svg-icons'
+
+import {
+  SiVercel,
+  SiRender,
+  SiNetlify,
+  SiPhpmyadmin,
+  SiXampp,
+  SiC,
+  SiCplusplus,
+  SiExpress,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiPhp,
+  SiCanva,
+  SiClaude,
+  SiChatbot,
+  SiGooglegemini,
+  SiRailway,
+  SiSupabase,
+} from 'react-icons/si'
+
+import { TbApi } from 'react-icons/tb'
+
 export const skills = {
   'Web Dev': {
-    Frontend: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React.js', 'Tailwind CSS'],
-    Backend: ['Node.js', 'Express.js', 'MySQL', 'PostgreSQL', 'MongoDB', 'Php', 'EJS'],
+    Frontend: [
+      { name: 'HTML', icon: faHtml5 },
+      { name: 'CSS', icon: faCss3Alt },
+      { name: 'JavaScript', icon: faJs },
+      { name: 'Bootstrap', icon: faBootstrap },
+      { name: 'React.js', icon: faReact },
+      { name: 'Tailwind CSS', icon: faTailwindCss },
+    ],
+
+    Backend: [
+      { name: 'Node.js', icon: faNodeJs },
+      { name: 'Express.js', icon: SiExpress },
+      { name: 'MySQL', icon: SiMysql },
+      { name: 'PostgreSQL', icon: SiPostgresql },
+      { name: 'MongoDB', icon: SiMongodb },
+      { name: 'Rest API', icon: TbApi },
+    ],
   },
-  Languages: ['JavaScript', 'Python', 'C', 'C++', 'Java', 'Php'],
-  'Soft Skills': ['Communication', 'Problem Solving', 'Team Collaboration', 'Leadership', 'Adaptability', 'Time Management'],
-  Other: ['Git', 'Github', 'Vercel', 'Render', 'Netlify', 'PhpMyAdmin', 'WAMP', 'XAMPP'],
+
+  Languages: [
+    { name: 'JavaScript', icon: faJs },
+    { name: 'Python', icon: faPython },
+    { name: 'C', icon: SiC },
+    { name: 'C++', icon: SiCplusplus },
+    { name: 'Java', icon: faJava },
+    { name: 'Php', icon: SiPhp },
+  ],
+
+  'Soft Skills': [
+    { name: 'Communication', icon: faComments },
+    { name: 'Problem Solving', icon: faLightbulb },
+    { name: 'Team Collaboration', icon: faPeopleGroup },
+    { name: 'Leadership', icon: faChessKing },
+    { name: 'Adaptability', icon: faCompass },
+    { name: 'Time Management', icon: faClock },
+  ],
+
+  Other: [
+    { name: 'Git', icon: faGitAlt },
+    { name: 'Github', icon: faGithub },
+    { name: 'Vercel', icon: SiVercel },
+    { name: 'Render', icon: SiRender },
+    { name: 'Netlify', icon: SiNetlify },
+    { name: 'Railway', icon: SiRailway },
+    { name: 'Supabase', icon: SiSupabase },
+    { name: 'PhpMyAdmin', icon: SiPhpmyadmin },
+    { name: 'WAMP / XAMPP', icon: SiXampp },
+    { name: 'Canva', icon: SiCanva },
+    { name: 'Claude', icon: SiClaude },
+    { name: 'ChatGPT', icon: SiChatbot },
+    { name: 'Gemini', icon: SiGooglegemini },
+  ],
 }
 
 export const certificates = [

@@ -1,5 +1,5 @@
 "use client";
-
+import { SiLeetcode } from 'react-icons/si'
 import { MapPin, Mail } from "lucide-react";
 import { personalInfo } from "../data/portfolioData";
 
@@ -40,7 +40,7 @@ export default function About() {
               Passionate Developer &amp; Tech Enthusiast
             </h3>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-pretty">
-              Hi, I'm Aman, a B.Tech CSE student at GGSIPU with a curious mind
+              Hi, I'm Aman, a B.Tech (CSE) student at GGSIPU with a curious mind
               and a builder's mindset. I enjoy creating things that matter,
               taking on challenges, and constantly pushing myself to grow.
               <br />
@@ -76,7 +76,7 @@ export default function About() {
                   external: true,
                 },
                 {
-                  icon: <i className="fa-solid fa-code text-lg" />,
+                  icon: <SiLeetcode className="text-lg" />,
                   label: "LeetCode",
                   href: personalInfo.leetcodeUrl,
                   external: true,

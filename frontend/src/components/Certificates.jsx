@@ -116,7 +116,7 @@ function CertificateCard({ cert, delay, onImageClick }) {
         <img
           src={cert.image || '/placeholder.svg'}
           alt={`${cert.title} certificate`}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
