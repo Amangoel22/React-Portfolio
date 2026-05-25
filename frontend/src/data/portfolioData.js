@@ -193,6 +193,7 @@ import {
   SiGooglegemini,
   SiRailway,
   SiSupabase,
+  SiJsonwebtokens,
 } from 'react-icons/si'
 
 import { TbApi } from 'react-icons/tb'
@@ -215,7 +216,7 @@ export const skills = {
       { name: 'PostgreSQL', icon: SiPostgresql },
       { name: 'MongoDB', icon: SiMongodb },
       { name: 'Rest API', icon: TbApi },
-      {name: 'JWT Authentication', icon: TbApi},
+      {name: 'JWT Authentication', icon: SiJsonwebtokens},
     ],
   },
 
