@@ -214,16 +214,17 @@ export const skills = {
       { name: 'PostgreSQL', icon: SiPostgresql },
       { name: 'MongoDB', icon: SiMongodb },
       { name: 'Rest API', icon: TbApi },
+      {name: 'JWT Authentication', icon: 'SiJsonwebtokens'},
     ],
   },
 
   Languages: [
-    { name: 'JavaScript', icon: faJs },
-    { name: 'Python', icon: faPython },
     { name: 'C', icon: SiC },
     { name: 'C++', icon: SiCplusplus },
     { name: 'Java', icon: faJava },
     { name: 'Php', icon: SiPhp },
+    { name: 'Python', icon: faPython },
+    { name: 'JavaScript', icon: faJs },
   ],
 
   'Soft Skills': [
