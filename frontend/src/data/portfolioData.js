@@ -215,7 +215,7 @@ export const skills = {
       { name: 'PostgreSQL', icon: SiPostgresql },
       { name: 'MongoDB', icon: SiMongodb },
       { name: 'Rest API', icon: TbApi },
-      {name: 'JWT Authentication', icon: faShieldHalved},
+      {name: 'JWT Authentication', icon: TbApi},
     ],
   },
 
