@@ -171,6 +171,7 @@ import {
   faComments,
   faChessKing,
   faCompass,
+  faShieldHalved,
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -214,7 +215,7 @@ export const skills = {
       { name: 'PostgreSQL', icon: SiPostgresql },
       { name: 'MongoDB', icon: SiMongodb },
       { name: 'Rest API', icon: TbApi },
-      {name: 'JWT Authentication', icon: 'fa-solid fa-shield-halved'},
+      {name: 'JWT Authentication', icon: faShieldHalved},
     ],
   },
 
