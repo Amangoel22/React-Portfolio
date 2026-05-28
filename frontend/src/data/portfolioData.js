@@ -111,7 +111,7 @@ export const projects = [
     icon: 'fa-solid fa-screwdriver-wrench',
     image: '/projects/cms.png',
   },
-    {
+  {
     id: 'p-4',
     title: 'shop.com',
     description:
@@ -225,7 +225,8 @@ export const skills = {
       { name: 'PostgreSQL', icon: SiPostgresql },
       { name: 'MongoDB', icon: SiMongodb },
       { name: 'Rest API', icon: TbApi },
-      {name: 'JWT Authentication', icon: SiJsonwebtokens},
+      { name: 'Prisma', icon: SiPrisma },
+      { name: 'JWT Authentication', icon: SiJsonwebtokens },
     ],
   },
 
@@ -315,7 +316,7 @@ export const tracks = [
     artist: "Patrick Jordan",
     src: "/music/Fields of fariness.mp3"
   },
-    {
+  {
     title: "Icelandic Arpeggios",
     artist: "Div Kid",
     src: "/music/Icelandic Arpeggios.mp3"
