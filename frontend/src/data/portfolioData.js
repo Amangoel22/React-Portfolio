@@ -92,7 +92,7 @@ export const projects = [
       'An upscale of the previously built portfolio website with upgraded styling, react framework and more with backend integration to store visitors responses.',
     icon: 'fa-solid fa-user',
     image: '/projects/portfoliov2.png',
-    liveUrl: 'https://aman-portfolio-website-10.netlify.app/',
+    liveUrl: 'https://react-portfolio-d0au.onrender.com/',
   },
   {
     id: 'p-2',
@@ -110,6 +110,15 @@ export const projects = [
       'A full stack complaint management system developed to help an organization log, manage and resolve complaints quickly and efficiently.',
     icon: 'fa-solid fa-screwdriver-wrench',
     image: '/projects/cms.png',
+  },
+    {
+    id: 'p-4',
+    title: 'shop.com',
+    description:
+      'An e-commerce website built with the PERN stack, featuring user authentication, product browsing, shopping cart functionality, and a secure checkout process with Razorpay integration.',
+    icon: 'fa-solid fa-cart-shopping',
+    image: '/projects/shop.png',
+    liveUrl: 'https://shop-com-frontend.onrender.com/',
   },
 ]
 
