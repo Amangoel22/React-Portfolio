@@ -203,6 +203,7 @@ import {
   SiRailway,
   SiSupabase,
   SiJsonwebtokens,
+  SiPrisma,
 } from 'react-icons/si'
 
 import { TbApi } from 'react-icons/tb'
