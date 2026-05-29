@@ -204,6 +204,7 @@ import {
   SiSupabase,
   SiJsonwebtokens,
   SiPrisma,
+  SiOpenai,
 } from 'react-icons/si'
 
 import { TbApi } from 'react-icons/tb'
@@ -261,7 +262,7 @@ export const skills = {
     { name: 'WAMP / XAMPP', icon: SiXampp },
     { name: 'Canva', icon: SiCanva },
     { name: 'Claude', icon: SiClaude },
-    { name: 'ChatGPT', icon: SiChatbot },
+    { name: 'ChatGPT', icon: SiOpenai },
     { name: 'Gemini', icon: SiGooglegemini },
   ],
 }
