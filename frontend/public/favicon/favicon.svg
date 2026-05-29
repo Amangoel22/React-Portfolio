@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- A bold blue -->
-  <text x="12" y="62" font-family="Arial" font-weight="900" font-size="72" fill="#58A6FF">A</text>
-  <!-- G overlapping, white/light -->
-  <text x="42" y="78" font-family="Arial" font-weight="900" font-size="52" fill="#E6EDF3">G</text>
+  <!-- A bold dark navy -->
+  <text x="12" y="62" font-family="Arial" font-weight="900" font-size="72" fill="#0F172A">A</text>
+  <!-- G overlapping, vivid blue -->
+  <text x="42" y="78" font-family="Arial" font-weight="900" font-size="52" fill="#2563EB">G</text>
 </svg>
