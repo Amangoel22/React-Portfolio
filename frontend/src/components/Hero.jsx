@@ -23,9 +23,7 @@ export default function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600" />
           </span>
-          <span className="text-xs md:text-sm font-semibold text-blue-700 dark:text-blue-300 tracking-wide uppercase">
-            Hello, I&apos;m
-          </span>
+
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6 animate-on-scroll fade-up delay-100">
