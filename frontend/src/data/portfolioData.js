@@ -15,21 +15,21 @@ export const personalInfo = {
 }
 
 export const workExperience = [
-  {
+    {
     id: 'we-1',
-    period: 'June 2025 — August 2025',
-    title: 'Full Stack Web Development Intern',
-    organisation: 'DRDO, Ministry of Defence, Govt. of India',
-    description:
-      'Developed and deployed a full-stack Complaint Management Portal. Built a responsive dashboard, integrated dynamic complaint tracking and streamlined workflows.',
-  },
-  {
-    id: 'we-2',
     period: 'June 2026 — Present',
     title: 'SDE Intern',
     organisation: 'Airports Authority of India (AAI)',
     // description:
     //   'Developed and deployed a full-stack Complaint Management Portal. Built a responsive dashboard, integrated dynamic complaint tracking and streamlined workflows.',
+  },
+  {
+    id: 'we-2',
+    period: 'June 2025 — August 2025',
+    title: 'Full Stack Web Development Intern',
+    organisation: 'DRDO, Ministry of Defence, Govt. of India',
+    description:
+      'Developed and deployed a full-stack Complaint Management Portal. Built a responsive dashboard, integrated dynamic complaint tracking and streamlined workflows.',
   }
 ]
 
