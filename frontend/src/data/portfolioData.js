@@ -78,7 +78,7 @@ export const positionsOfResponsibility = [
 export const education = [
   {
     id: 'ed-1',
-    period: 'September 2023 — 2027',
+    period: 'September 2023 — Present',
     title: 'Bachelor of Technology (B.Tech) - Computer Science and Engineering',
     institution: 'Guru Gobind Singh Indraprastha University (GGSIPU)',
     grade: 'CGPA: 8.63',
@@ -306,7 +306,7 @@ export const certificates = [
 ]
 
 export const achievements = [
-  'Top 19% at Leetcode Contents (As of May 2026)',
+  'Top 16% at Leetcode Contents (As of June 2026)',
   'Smart India Hackathon - Internal Hackathon Winner',
   'House Prefect - Captain',
   '7 Days DSA Challenge - CodeGeeks',
