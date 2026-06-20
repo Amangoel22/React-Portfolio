@@ -310,7 +310,7 @@ export const certificates = [
     date: 'June 2026',
     description:
       'Passed the Java (Basic) certification on HackerRank, demonstrating proficiency in Java programming fundamentals.',
-    image: '/certificates/java_hack.jpg',
+    image: '/certificates/java_hack.png',
   },
 ]
 
