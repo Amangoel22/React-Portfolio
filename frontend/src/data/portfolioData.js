@@ -135,7 +135,7 @@ export const minorProjects = [
     id: 'mp-1',
     title: 'Air Pollution Tracker',
     icon: 'fa-solid fa-smog',
-    description: 'IoT based air pollution monitor. Powered by Arduino.',
+    description: 'IoT based air pollution monitor, powered by Arduino and ESP8266, which collects real-time air quality data and displays it on a web dashboard (Blynk) for easy monitoring, analysis and real time updates.',
     image: '/projects/iot.png',
   },
   {
@@ -324,13 +324,13 @@ export const certificates = [
 ]
 
 export const achievements = [
-  'Top 16% at Leetcode Contents (As of June 2026)',
+  'Top 16% at Leetcode Contests (As of June 2026)',
   'Solved 250+ problems on Leetcode and other platforms (As of June 2026)',
   'Smart India Hackathon - Internal Hackathon Winner',
   'House Prefect - Captain',
   '7 Days DSA Challenge - CodeGeeks',
   'Literary Competition Winner - Story Telling',
-  'Academic Rank Holder',
+  'Consistent Academic Performer and Merit Holder',
   'NSO Rank Holder',
 ]
 
