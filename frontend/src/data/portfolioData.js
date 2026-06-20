@@ -135,7 +135,7 @@ export const minorProjects = [
     id: 'mp-1',
     title: 'Air Pollution Tracker',
     icon: 'fa-solid fa-smog',
-    description: 'IoT based air pollution monitor, powered by Arduino and ESP8266, which collects real-time air quality data and displays it on a web dashboard (Blynk) for easy monitoring, analysis and real time updates.',
+    description: 'IoT based air pollution monitor, powered by Arduino and NodeMCU ESP8266, which collects real-time air quality data and displays it on a web dashboard (Blynk) for easy monitoring, analysis and real time updates.',
     image: '/projects/iot.png',
   },
   {
