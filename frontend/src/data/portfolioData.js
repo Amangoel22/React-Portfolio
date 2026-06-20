@@ -303,10 +303,20 @@ export const certificates = [
       'Understood web development concepts in PERN stack.',
     image: '/certificates/web.jpg',
   },
+  {
+    id: 'c-4',
+    title: 'Java (Basic) Certification',
+    issuer: 'HackerRank',
+    date: 'June 2026',
+    description:
+      'Passed the Java (Basic) certification on HackerRank, demonstrating proficiency in Java programming fundamentals.',
+    image: '/certificates/java_hack.jpg',
+  },
 ]
 
 export const achievements = [
   'Top 16% at Leetcode Contents (As of June 2026)',
+  'Solved 250+ problems on Leetcode and other platforms (As of June 2026)',
   'Smart India Hackathon - Internal Hackathon Winner',
   'House Prefect - Captain',
   '7 Days DSA Challenge - CodeGeeks',
