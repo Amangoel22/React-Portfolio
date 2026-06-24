@@ -319,7 +319,7 @@ export const certificates = [
     date: 'June 2026',
     description:
       'Completed the "Make Agentic AI Work for You" course from IBM, gaining insights into leveraging agentic AI for various applications, understanding RAG and multi-agent systems.',
-    image: '/certificates/ibm_agentic.png',
+    image: '/certificates/ai_completion.png',
   },
 ]
 
