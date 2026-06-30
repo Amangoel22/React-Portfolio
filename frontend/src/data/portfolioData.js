@@ -119,8 +119,16 @@ export const projects = [
     icon: 'fa-solid fa-screwdriver-wrench',
     image: '/projects/cms.png',
   },
-  {
+    {
     id: 'p-4',
+    title: 'Deadline Zero',
+    description:
+      'Deadline Zero is a smart execution platform designed to help users consistently finish important work before deadlines. It features intelligent scheduling, immersive Mission Mode, focus tracking, productivity analytics, and personalized recommendations to build better work habits.',
+    icon: 'fa-sold fa-list-check',
+    image: '/projects/deadlinezero.png',
+  },
+  {
+    id: 'p-5',
     title: 'shop.com',
     description:
       'An e-commerce website built with the PERN stack, featuring user authentication, product browsing, shopping cart functionality, and a secure checkout process with Razorpay integration.',
