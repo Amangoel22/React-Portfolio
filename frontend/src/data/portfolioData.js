@@ -123,7 +123,7 @@ export const projects = [
     id: 'p-4',
     title: 'Deadline Zero',
     description:
-      'Deadline Zero is a smart execution platform designed to help users consistently finish important work before deadlines. It features intelligent scheduling, immersive mission Mode, focus tracking, productivity analytics, and personalized recommendations to build better work habits.',
+      'A smart execution platform designed to help users consistently finish important work before deadlines. It features intelligent scheduling, immersive mission mode, focus tracking, productivity analytics, and personalized recommendations to build better work habits.',
     icon: 'fa-solid fa-list-check',
     image: '/projects/deadlinezero.png',
     liveUrl: 'https://frontend-6p1e.onrender.com'
