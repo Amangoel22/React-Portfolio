@@ -126,6 +126,7 @@ export const projects = [
       'Deadline Zero is a smart execution platform designed to help users consistently finish important work before deadlines. It features intelligent scheduling, immersive Mission Mode, focus tracking, productivity analytics, and personalized recommendations to build better work habits.',
     icon: 'fa-sold fa-list-check',
     image: '/projects/deadlinezero.png',
+    liveUrl: 'https://frontend-6p1e.onrender.com'
   },
   {
     id: 'p-5',
@@ -187,6 +188,7 @@ import {
   faGitAlt,
   faGithub,
   faTailwindCss,
+  faTypescript,
 } from '@fortawesome/free-brands-svg-icons'
 
 import {
@@ -234,6 +236,7 @@ export const skills = {
       { name: 'Bootstrap', icon: faBootstrap },
       { name: 'React.js', icon: faReact },
       { name: 'Tailwind CSS', icon: faTailwindCss },
+      {name: 'TypeScript', icon: faTypescript},
     ],
 
     Backend: [
