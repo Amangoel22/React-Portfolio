@@ -81,7 +81,7 @@ export const education = [
     period: 'September 2023 — Present',
     title: 'Bachelor of Technology (B.Tech) - Computer Science and Engineering',
     institution: 'Guru Gobind Singh Indraprastha University (GGSIPU)',
-    grade: 'CGPA: 8.63',
+    grade: 'CGPA: 8.75',
   },
   {
     id: 'ed-2',

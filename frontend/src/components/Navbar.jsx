@@ -6,7 +6,7 @@ import { personalInfo } from '../data/portfolioData'
 
 const NAV_LINKS = [
   { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
+  { href: '#experience', label: 'Experience & Education' },
   { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
   { href: '#achievements', label: 'Achievements' },
