@@ -332,6 +332,15 @@ export const certificates = [
       'Completed the "Make Agentic AI Work for You" course from IBM, gaining insights into leveraging agentic AI for various applications, understanding RAG and multi-agent systems.',
     image: '/certificates/ai_completion.png',
   },
+  {
+    id: 'c-6',
+    title: 'SQL (Basic) Certification',
+    issuer: 'HackerRank',
+    date: 'July 2026',
+    description:
+      'Completed the "SQL (Basic) Certification" on HackerRank, demonstrating proficiency in SQL fundamentals.',
+    image: '/certificates/sql_hack.png',
+  },
 ]
 
 export const achievements = [
