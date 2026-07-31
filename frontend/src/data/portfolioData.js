@@ -17,16 +17,16 @@ export const personalInfo = {
 export const workExperience = [
     {
     id: 'we-1',
-    period: 'June 2026 — Present',
-    title: 'SDE Intern',
+    period: 'June 2026 — July 2026',
+    title: 'Software Development Intern',
     organisation: 'Airports Authority of India (AAI)',
-    // description:
-    //   'Developed and deployed a full-stack Complaint Management Portal. Built a responsive dashboard, integrated dynamic complaint tracking and streamlined workflows.',
+    description:
+      'Developed a full-stack web application powered by AI to enhance runway safety by detecting foreign objects and potential hazards on the runway, providing real-time alerts to air traffic controllers.',
   },
   {
     id: 'we-2',
     period: 'June 2025 — August 2025',
-    title: 'Full Stack Web Development Intern',
+    title: 'Web Development Intern',
     organisation: 'DRDO, Ministry of Defence, Govt. of India',
     description:
       'Developed and deployed a full-stack Complaint Management Portal. Built a responsive dashboard, integrated dynamic complaint tracking and streamlined workflows.',
