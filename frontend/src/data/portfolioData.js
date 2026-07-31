@@ -119,8 +119,17 @@ export const projects = [
     icon: 'fa-solid fa-screwdriver-wrench',
     image: '/projects/cms.png',
   },
-    {
+  {
     id: 'p-4',
+    title: 'AeroSafe AI',
+    description:
+      'An AI-powered solution for enhancing runway safety by detecting foreign objects and potential hazards on the runway, providing real-time alerts to air traffic controllers.',
+    icon: 'fa-solid fa-screwdriver-wrench',
+    image: '/projects/aerosafe.png',
+    // liveUrl: '',
+  },
+    {
+    id: 'p-5',
     title: 'Deadline Zero',
     description:
       'A smart execution platform designed to help users consistently finish important work before deadlines. It features intelligent scheduling, immersive mission mode, focus tracking, productivity analytics, and personalized recommendations to build better work habits.',
@@ -129,7 +138,7 @@ export const projects = [
     liveUrl: 'https://frontend-6p1e.onrender.com'
   },
   {
-    id: 'p-5',
+    id: 'p-6',
     title: 'shop.com',
     description:
       'An e-commerce website built with the PERN stack, featuring user authentication, product browsing, shopping cart functionality, and a secure checkout process with Razorpay integration.',
