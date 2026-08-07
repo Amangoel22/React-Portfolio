@@ -15,8 +15,16 @@ export const personalInfo = {
 }
 
 export const workExperience = [
-    {
+  {
     id: 'we-1',
+    period: 'August 2026 — Present',
+    title: 'Software Development Trainee',
+    organisation: 'TO THE NEW',
+    // description:
+    //   'Developed a full-stack web application powered by AI to enhance runway safety by detecting foreign objects and potential hazards on the runway, providing real-time alerts to air traffic controllers.',
+  },  
+  {
+    id: 'we-2',
     period: 'June 2026 — July 2026',
     title: 'Software Development Intern',
     organisation: 'Airports Authority of India (AAI)',
@@ -24,7 +32,7 @@ export const workExperience = [
       'Developed a full-stack web application powered by AI to enhance runway safety by detecting foreign objects and potential hazards on the runway, providing real-time alerts to air traffic controllers.',
   },
   {
-    id: 'we-2',
+    id: 'we-3',
     period: 'June 2025 — August 2025',
     title: 'Web Development Intern',
     organisation: 'DRDO, Ministry of Defence, Govt. of India',
@@ -302,7 +310,7 @@ export const certificates = [
     issuer: 'CFEES, DRDO',
     date: 'Aug 2025',
     description:
-      'Completed 8 weeks of internship at CFEES, DRDO.',
+      'Completed 8 weeks of internship at CFEES, DRDO where I developed and deployed a full-stack Complaint Management Portal. Built a responsive dashboard, integrated dynamic complaint tracking and streamlined workflows.',
     image: '/certificates/drdo.jpeg',
   },
   {
@@ -349,6 +357,24 @@ export const certificates = [
     description:
       'Completed the "SQL (Basic) Certification" on HackerRank, demonstrating proficiency in SQL fundamentals.',
     image: '/certificates/sql_hack.png',
+  },
+  {
+    id: 'c-7',
+    title: 'Intern at Airports Authority of India (AAI)',
+    issuer: 'Airports Authority of India (AAI)',
+    date: 'July 2026',
+    description:
+      'Completed 2 months of internship at Airports Authority of India (AAI), where I developed a full-stack web application powered by AI to enhance runway safety by detecting foreign objects and potential hazards on the runway, providing real-time alerts to air traffic controllers.',
+    image: '/certificates/aai.jpeg',
+  },
+  {
+    id: 'c-8',
+    title: 'EJS Certification',
+    issuer: 'Udemy',
+    date: 'August 2026',
+    description:
+      'Completed the "EJS Certification" on Udemy, demonstrating proficiency in EJS templating.',
+    image: '/certificates/ejs.jpg',
   },
 ]
 
