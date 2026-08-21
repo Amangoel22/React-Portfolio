@@ -382,6 +382,15 @@ export const certificates = [
       'Completed the "EJS Certification" on Udemy, demonstrating proficiency in EJS templating.',
     image: '/certificates/ejs.jpg',
   },
+  {
+    id: 'c-9',
+    title: 'Claude 101',
+    issuer: 'Anthropic',
+    date: 'August 2026',
+    description:
+      'Completed the "Claude 101" course deepning my knowledge of Claude workflow and features.',
+    image: '/certificates/claude101.png',
+  },
 ]
 
 export const achievements = [
