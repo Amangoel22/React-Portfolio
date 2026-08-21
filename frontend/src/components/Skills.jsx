@@ -34,14 +34,14 @@ function SkillItem({ skill, index }) {
 const DELAYS = ["delay-100", "delay-200", "delay-300", "delay-400"];
 
 export default function Skills() {
-  const [activeTab, setActiveTab] = useState("Web Dev");
+  const [activeTab, setActiveTab] = useState("Development");
   const tabs = Object.keys(skills);
 
   const getSkillsForTab = (tabName) => {
     const tabSkills = skills[tabName];
 
     if (
-      tabName === "Web Dev" &&
+      tabName === "Development" &&
       typeof tabSkills === "object" &&
       !Array.isArray(tabSkills)
     ) {
