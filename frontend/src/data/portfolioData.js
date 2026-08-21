@@ -244,8 +244,8 @@ import {
   SiOpenai,
   SiRedux,
   SiTanstack,
-  TbBrandReactNative,
 } from 'react-icons/si'
+import { TbBrandReactNative } from "react-icons/tb";
 
 import { TbApi } from 'react-icons/tb'
 
