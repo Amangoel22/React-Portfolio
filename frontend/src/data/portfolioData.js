@@ -206,6 +206,8 @@ import {
   faGithub,
   faTailwindCss,
   faTypescript,
+  faRedux,
+  
 } from '@fortawesome/free-brands-svg-icons'
 
 import {
@@ -240,12 +242,15 @@ import {
   SiJsonwebtokens,
   SiPrisma,
   SiOpenai,
+  SiRedux,
+  SiTanstack,
+  TbBrandReactNative
 } from 'react-icons/si'
 
 import { TbApi } from 'react-icons/tb'
 
 export const skills = {
-  'Web Dev': {
+  'Development': {
     Frontend: [
       { name: 'HTML', icon: faHtml5 },
       { name: 'CSS', icon: faCss3Alt },
@@ -253,7 +258,9 @@ export const skills = {
       { name: 'Bootstrap', icon: faBootstrap },
       { name: 'React.js', icon: faReact },
       { name: 'Tailwind CSS', icon: faTailwindCss },
-      {name: 'TypeScript', icon: faTypescript},
+      { name: 'React Native', icon: TbBrandReactNative},
+      { name: 'Redux', icon: SiRedux },
+      { name: 'TanStack', icon: SiTanstack },
     ],
 
     Backend: [
@@ -275,6 +282,7 @@ export const skills = {
     { name: 'Php', icon: SiPhp },
     { name: 'Python', icon: faPython },
     { name: 'JavaScript', icon: faJs },
+    {name: 'TypeScript', icon: faTypescript},
   ],
 
   'Soft Skills': [
