@@ -243,7 +243,6 @@ import {
   SiPrisma,
   SiOpenai,
   SiRedux,
-  SiTanstack,
 } from 'react-icons/si'
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -260,7 +259,6 @@ export const skills = {
       { name: 'Tailwind CSS', icon: faTailwindCss },
       { name: 'React Native', icon: TbBrandReactNative},
       { name: 'Redux', icon: SiRedux },
-      { name: 'TanStack', icon: SiTanstack },
     ],
 
     Backend: [
