@@ -391,6 +391,15 @@ export const certificates = [
       'Completed the "Claude 101" course deepning my knowledge of Claude workflow and features.',
     image: '/certificates/claude101.png',
   },
+  {
+    id: 'c-10',
+    title: 'Bharatiya Antariksh Hackathon 2026',
+    issuer: 'ISRO & Hack2Skill',
+    date: 'August 2026',
+    description:
+      'Participated in the Bharatiya Antariksh Hackathon 2026 organised by ISRO and Hack2Skill.',
+    image: '/certificates/isro.png',
+  },
 ]
 
 export const achievements = [
