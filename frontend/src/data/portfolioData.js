@@ -400,6 +400,15 @@ export const certificates = [
       'Participated in the Bharatiya Antariksh Hackathon 2026 organised by ISRO and Hack2Skill.',
     image: '/certificates/isro.png',
   },
+  {
+    id: 'c-11',
+    title: 'React Native - The Practical Guide',
+    issuer: 'Udemy',
+    date: 'August 2026',
+    description:
+      'Completed the "React Native" course, understanding RN, Expo and related libraries for app development.',
+    image: '/certificates/rn_course.jpg',
+  },
 ]
 
 export const achievements = [
