@@ -53,7 +53,7 @@ export const positionsOfResponsibility = [
   },
   {
     id: 'por-2',
-    period: 'September 2024 - Present',
+    period: 'September 2024 - September 2026',
     title: 'Executive (Former Social Media Lead & Event Manager)',
     organisation: 'CodeGeeks - Coding Society',
     bullets: [
