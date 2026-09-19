@@ -145,15 +145,6 @@ export const projects = [
     image: '/projects/deadlinezero.png',
     liveUrl: 'https://frontend-6p1e.onrender.com'
   },
-  {
-    id: 'p-6',
-    title: 'shop.com',
-    description:
-      'An e-commerce website built with the PERN stack, featuring user authentication, product browsing, shopping cart functionality, and a secure checkout process with Razorpay integration.',
-    icon: 'fa-solid fa-cart-shopping',
-    image: '/projects/shop.png',
-    liveUrl: 'https://shop-com-frontend.onrender.com/',
-  },
 ]
 
 export const minorProjects = [
@@ -166,6 +157,15 @@ export const minorProjects = [
   },
   {
     id: 'mp-2',
+    title: 'shop.com',
+    description:
+      'An e-commerce website built with the PERN stack, featuring user authentication, product browsing, shopping cart functionality, and a secure checkout process with Razorpay integration.',
+    icon: 'fa-solid fa-cart-shopping',
+    image: '/projects/shop.png',
+    liveUrl: 'https://shop-com-frontend.onrender.com/',
+  },
+  {
+    id: 'mp-3',
     title: 'Memory Card Game',
     description: 'A fun and interactive Memory Card Game built to challenge focus and recall. Flip cards, find matching pairs, and beat your best score.',
     icon: 'fa-solid fa-brain',
@@ -174,7 +174,7 @@ export const minorProjects = [
     codeUrl: 'https://github.com/Amangoel22/Memory-Card-Game',
   },
   {
-    id: 'mp-3',
+    id: 'mp-4',
     title: 'Simon Game',
     description: 'A web-based implementation of the classic Simon Game. Gameplay involves replicating increasingly complex sequences of colors and sounds.',
     icon: 'fa-solid fa-cubes',
@@ -183,7 +183,7 @@ export const minorProjects = [
     liveUrl: 'https://simon-game-iota-seven.vercel.app/',
   },
   {
-    id: 'mp-4',
+    id: 'mp-5',
     title: 'Crypto Price Tracker',
     description: 'A live API powered crypto price tracker which provides a detailed analysis of each crypto currency.',
     icon: 'fa-solid fa-arrow-trend-up',
